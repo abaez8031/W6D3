@@ -1,2 +1,50 @@
   [1m[35m (88.4ms)[0m  [1m[35mCREATE DATABASE "firstroutesandcontrollers_development" ENCODING = 'unicode'[0m
   [1m[35m (35.4ms)[0m  [1m[35mCREATE DATABASE "firstroutesandcontrollers_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2023-02-15 15:35:03 -0500
+
+ActiveRecord::NoDatabaseError - We could not find your database: firstroutesandcontrollers_development. Which can be found in the database configuration file located at config/database.yml.
+To resolve this issue:
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+To create your database, run:
+        bin/rails db:create:
+
+Started POST "/__better_errors/9ea4555fd7d98c03/variables" for ::1 at 2023-02-15 15:35:03 -0500
+Started GET "/users" for ::1 at 2023-02-15 15:45:40 -0500
+
+ActiveRecord::NoDatabaseError - We could not find your database: firstroutesandcontrollers_development. Which can be found in the database configuration file located at config/database.yml.
+To resolve this issue:
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+To create your database, run:
+        bin/rails db:create:
+
+  [1m[35m (612.5ms)[0m  [1m[35mCREATE DATABASE "firstroutesandcontrollers_development" ENCODING = 'unicode'[0m
+  [1m[35m (246.2ms)[0m  [1m[35mCREATE DATABASE "firstroutesandcontrollers_test" ENCODING = 'unicode'[0m
+Started GET "/users" for ::1 at 2023-02-15 16:05:35 -0500
+
+AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
+
+Started GET "/users" for ::1 at 2023-02-15 16:06:05 -0500
+
+AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
+
+Started GET "/users" for ::1 at 2023-02-15 16:08:15 -0500
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 273)
+
+
+Started GET "/users" for ::1 at 2023-02-15 16:08:47 -0500
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 80)
+
+
+Started GET "/users" for ::1 at 2023-02-15 16:09:20 -0500
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 13)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1337)
+
+
