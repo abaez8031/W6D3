@@ -48,3 +48,175 @@ Processing by UsersController#index as */*
 Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1337)
 
 
+Started GET "/users?admin=true" for ::1 at 2023-02-15 16:14:49 -0500
+Processing by UsersController#index as */*
+  Parameters: {"admin"=>"true"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 13)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1407)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2023-02-15 16:15:31 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 175)
+
+
+Started POST "/users" for ::1 at 2023-02-15 16:17:04 -0500
+
+AbstractController::ActionNotFound - The action 'create' could not be found for UsersController:
+
+Started POST "/users" for ::1 at 2023-02-15 16:19:04 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 254)
+
+
+Started POST "/users?fav_food=pizza" for ::1 at 2023-02-15 16:20:26 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 113)
+
+
+Started POST "/users?fav_food=pizza" for ::1 at 2023-02-15 16:20:29 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 110)
+
+
+Started POST "/users?admin=true" for ::1 at 2023-02-15 16:21:02 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza", "admin"=>"true"}
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 118)
+
+
+Started POST "/users?fav_food=pizza" for ::1 at 2023-02-15 16:21:42 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza"}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 109)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2023-02-15 16:22:42 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 391)
+
+
+Started GET "/users?admin=true" for ::1 at 2023-02-15 16:23:05 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza", "admin"=>"true"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 160)
+
+
+Started POST "/users?admin=true" for ::1 at 2023-02-15 16:27:06 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza", "admin"=>"true"}
+Completed 200 OK in 1ms (Views: 0.5ms | Allocations: 138)
+
+
+Started GET "/users" for ::1 at 2023-02-15 16:28:54 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 0ms (Views: 0.4ms | Allocations: 145)
+
+
+Started GET "/users?admin=true" for ::1 at 2023-02-15 16:29:03 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza", "admin"=>"true"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 2ms (Views: 1.6ms | Allocations: 145)
+
+
+Started POST "/users?admin=true" for ::1 at 2023-02-15 16:31:30 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza", "admin"=>"true"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 8)
+Completed 200 OK in 0ms (Views: 0.3ms | Allocations: 441)
+
+
+Started POST "/users/" for ::1 at 2023-02-15 16:35:52 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 0ms (Views: 0.3ms | Allocations: 439)
+
+
+Started GET "/users/:id" for ::1 at 2023-02-15 16:36:01 -0500
+Processing by UsersController#show as */*
+  Parameters: {"fav_food"=>"pizza", "id"=>":id"}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 152)
+
+
+Started GET "/users/2" for ::1 at 2023-02-15 16:36:19 -0500
+Processing by UsersController#show as */*
+  Parameters: {"fav_food"=>"pizza", "id"=>"2"}
+Completed 200 OK in 0ms (Views: 0.3ms | Allocations: 115)
+
+
+Started GET "/users/2" for ::1 at 2023-02-15 16:36:43 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 106)
+
+
+Started GET "/users/3" for ::1 at 2023-02-15 16:36:57 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"3"}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 106)
+
+
+Started GET "/users/3" for ::1 at 2023-02-15 16:51:05 -0500
+Processing by UsersController#show as */*
+  Parameters: {"text/plain"=>[""], "id"=>"3"}
+Completed 200 OK in 28772ms (Views: 0.2ms | Allocations: 133911)
+
+
+Started GET "/users/3" for ::1 at 2023-02-15 16:54:14 -0500
+Processing by UsersController#show as */*
+  Parameters: {"text/plain"=>[""], "id"=>"3"}
+Completed 200 OK in 177063ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 140592)
+
+
+Started GET "/users/3" for ::1 at 2023-02-15 16:58:09 -0500
+Processing by UsersController#show as */*
+  Parameters: {"name"=>"jordan", "water"=>"core", "id"=>"3"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 229)
+
+
+Started GET "/users/3" for ::1 at 2023-02-15 16:59:06 -0500
+Processing by UsersController#show as */*
+  Parameters: {"user"=>{"name"=>"jordan"}, "water"=>"core", "id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 138)
+
+
+Started GET "/users/3" for ::1 at 2023-02-15 16:59:27 -0500
+Processing by UsersController#show as */*
+  Parameters: {"user"=>{"name"=>"jordan", "water"=>"core"}, "id"=>"3"}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 134)
+
+
+Started POST "/users" for ::1 at 2023-02-15 17:22:23 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"jordan", "water"=>"core"}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 13)
+Completed 200 OK in 9ms (Views: 8.7ms | Allocations: 1234)
+
+
+Started POST "/users" for ::1 at 2023-02-15 17:22:43 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"jordan", "water"=>"core"}}
+Completed 200 OK in 0ms (Views: 0.2ms | Allocations: 218)
+
+
