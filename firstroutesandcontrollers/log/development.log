@@ -1,0 +1,2 @@
+  [1m[35m (88.4ms)[0m  [1m[35mCREATE DATABASE "firstroutesandcontrollers_development" ENCODING = 'unicode'[0m
+  [1m[35m (35.4ms)[0m  [1m[35mCREATE DATABASE "firstroutesandcontrollers_test" ENCODING = 'unicode'[0m
