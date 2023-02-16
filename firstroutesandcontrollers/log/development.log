@@ -1716,3 +1716,235 @@ Processing by ArtworksController#update as */*
 Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 4252)
 
 
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mArtwork Load (3.0ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
+Started POST "/users?artist_id=71&viewer_id=50" for ::1 at 2023-02-16 16:37:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"artist_id"=>"71", "viewer_id"=>"50"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 2781)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/users_controller.rb:36:in `user_params'
+  app/controllers/users_controller.rb:11:in `create'
+
+Started POST "/artwork_share?artist_id=71&viewer_id=50" for ::1 at 2023-02-16 16:38:25 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/artwork_share"):
+  
+Started POST "/artwork_shares?artist_id=71&viewer_id=50" for ::1 at 2023-02-16 16:40:02 -0500
+
+Zeitwerk::NameError - expected file /Users/jordanburanskas/Desktop/W6D3/firstroutesandcontrollers/app/controllers/artwork_shares_controller.rb to define constant ArtworkSharesController, but didn't
+      raise Zeitwerk::NameError.new(msg, cref.last)
+      ^^^^^:
+
+Started POST "/artwork_shares?artist_id=71&viewer_id=50" for ::1 at 2023-02-16 16:42:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artist_id"=>"71", "viewer_id"=>"50"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2568)
+
+
+
+NameError - uninitialized constant ArtworkSharesController::Artwork_shares
+        artwork_shares = Artwork_shares.new(artwork_share_params)
+                         ^^^^^^^^^^^^^^:
+  app/controllers/artwork_shares_controller.rb:4:in `create'
+
+Started POST "/artwork_shares?artist_id=71&viewer_id=50" for ::1 at 2023-02-16 16:42:52 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artist_id"=>"71", "viewer_id"=>"50"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2568)
+
+
+
+NameError - uninitialized constant ArtworkSharesController::ArtworkShares
+        artwork_shares = ArtworkShares.new(artwork_share_params)
+                         ^^^^^^^^^^^^^:
+  app/controllers/artwork_shares_controller.rb:4:in `create'
+
+Started POST "/artwork_shares?artist_id=71&viewer_id=50" for ::1 at 2023-02-16 16:43:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artist_id"=>"71", "viewer_id"=>"50"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 2574)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/artwork_shares_controller.rb:20:in `artwork_share_params'
+  app/controllers/artwork_shares_controller.rb:4:in `create'
+
+Started POST "/artwork_shares?artist_id=71&viewer_id=50" for ::1 at 2023-02-16 16:44:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artist_id"=>"71", "viewer_id"=>"50"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 2573)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: artwork_share:
+  app/controllers/artwork_shares_controller.rb:20:in `artwork_share_params'
+  app/controllers/artwork_shares_controller.rb:4:in `create'
+
+Started POST "/artwork_shares?artist_id=71&viewer_id=50" for ::1 at 2023-02-16 16:46:39 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artist_id"=>"71", "viewer_id"=>"50"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 2573)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: artwork_share:
+  app/controllers/artwork_shares_controller.rb:20:in `artwork_share_params'
+  app/controllers/artwork_shares_controller.rb:4:in `create'
+
+Started POST "/artwork_share?artist_id=71&viewer_id=50" for ::1 at 2023-02-16 16:46:43 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/artwork_share"):
+  
+Started POST "/artwork_share?artist_id=71&viewer_id=50" for ::1 at 2023-02-16 16:52:49 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/artwork_share"):
+  
+Started POST "/artwork_share?artwork_share[artist_id]=71&artwork_share[viewer_id]=50" for ::1 at 2023-02-16 16:53:42 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/artwork_share"):
+  
+Started POST "/artwork_shares?artwork_share[artist_id]=71&artwork_share[viewer_id]=50" for ::1 at 2023-02-16 16:55:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artwork_share"=>{"artist_id"=>"71", "viewer_id"=>"50"}}
+[31mUnpermitted parameter: :artist_id. Context: { controller: ArtworkSharesController, action: create, request: #<ActionDispatch::Request:0x00000001082d5a88>, params: {"artwork_share"=>{"artist_id"=>"71", "viewer_id"=>"50"}, "controller"=>"artwork_shares", "action"=>"create"} }[0m
+Completed 422 Unprocessable Entity in 19ms (Views: 0.1ms | ActiveRecord: 5.7ms | Allocations: 15073)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mArtwork Load (1.0ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks"[0m
+Started POST "/artwork_shares?artwork_share[artwork_id]=70&artwork_share[viewer_id]=49" for ::1 at 2023-02-16 16:58:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artwork_share"=>{"artwork_id"=>"70", "viewer_id"=>"49"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+  [1m[36mArtwork Load (0.6ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 32ms (Views: 0.1ms | ActiveRecord: 11.8ms | Allocations: 22301)
+
+
+Started POST "/artwork_shares?artwork_share[artwork_id]=70&artwork_share[viewer_id]=49" for ::1 at 2023-02-16 17:01:28 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artwork_share"=>{"artwork_id"=>"70", "viewer_id"=>"49"}}
+[31mUnpermitted parameter: :viewer_id. Context: { controller: ArtworkSharesController, action: create, request: #<ActionDispatch::Request:0x0000000106c9d090>, params: {"artwork_share"=>{"artwork_id"=>"70", "viewer_id"=>"49"}, "controller"=>"artwork_shares", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+  [1m[36mArtwork Load (0.8ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 25ms (Views: 0.1ms | ActiveRecord: 8.0ms | Allocations: 22392)
+
+
+Started POST "/artwork_shares?artwork_share[artwork_id]=70&artwork_share[user_id]=49" for ::1 at 2023-02-16 17:01:41 -0500
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artwork_share"=>{"artwork_id"=>"70", "user_id"=>"49"}}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1224)
+
+
+
+ActiveModel::UnknownAttributeError - unknown attribute 'user_id' for ArtworkShare.
+          raise UnknownAttributeError.new(self, k.to_s)
+          ^^^^^:
+  app/controllers/artwork_shares_controller.rb:4:in `create'
+
+Started POST "/artwork_shares?artwork_share[artwork_id]=70&artwork_share[viewer_id]=49" for ::1 at 2023-02-16 17:09:37 -0500
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artwork_share"=>{"artwork_id"=>"70", "viewer_id"=>"49"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+  [1m[36mArtwork Load (0.6ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 45ms (Views: 0.1ms | ActiveRecord: 13.3ms | Allocations: 17014)
+
+
+Started POST "/artwork_shares?artwork_share[artwork_id]=70&artwork_share[viewer_id]=49" for ::1 at 2023-02-16 17:10:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artwork_share"=>{"artwork_id"=>"70", "viewer_id"=>"49"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+  [1m[36mArtwork Load (0.4ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/artwork_shares_controller.rb:5:in `create'
+Completed 422 Unprocessable Entity in 31ms (Views: 0.1ms | ActiveRecord: 12.2ms | Allocations: 24927)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/artwork_shares?artwork_share[artwork_id]=70&artwork_share[viewer_id]=49" for ::1 at 2023-02-16 17:15:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+LoadError - cannot load such file -- byebug:
+  app/controllers/artwork_shares_controller.rb:2:in `<class:ArtworkSharesController>'
+  app/controllers/artwork_shares_controller.rb:1:in `<top (required)>'
+
+Started POST "/artwork_shares?artwork_share[artwork_id]=70&artwork_share[viewer_id]=49" for ::1 at 2023-02-16 17:15:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+LoadError - cannot load such file -- byebug:
+  app/controllers/artwork_shares_controller.rb:2:in `<top (required)>'
+
+Started POST "/artwork_shares?artwork_share[artwork_id]=70&artwork_share[viewer_id]=49" for ::1 at 2023-02-16 17:16:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artwork_share"=>{"artwork_id"=>"70", "viewer_id"=>"49"}}
+Started POST "/artwork_shares?artwork_share[artwork_id]=70&artwork_share[viewer_id]=49" for ::1 at 2023-02-16 17:17:33 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artwork_share"=>{"artwork_id"=>"70", "viewer_id"=>"49"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ (byebug):1:in `create'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+  [1m[36mArtwork Load (0.6ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ (byebug):1:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ (byebug):1:in `create'
+Started POST "/artwork_shares?artwork_share[artwork_id]=49&artwork_share[viewer_id]=71" for ::1 at 2023-02-16 17:22:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artwork_share"=>{"artwork_id"=>"49", "viewer_id"=>"71"}}
+Started POST "/artwork_shares?artwork_share[artwork_id]=49&artwork_share[viewer_id]=71" for ::1 at 2023-02-16 17:22:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArtworkSharesController#create as */*
+  Parameters: {"artwork_share"=>{"artwork_id"=>"49", "viewer_id"=>"71"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artwork_shares_controller.rb:9:in `create'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/controllers/artwork_shares_controller.rb:9:in `create'
+  [1m[36mArtwork Load (0.6ms)[0m  [1m[34mSELECT "artworks".* FROM "artworks" WHERE "artworks"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/artwork_shares_controller.rb:9:in `create'
+  [1m[36mArtworkShare Create (8.3ms)[0m  [1m[32mINSERT INTO "artwork_shares" ("artwork_id", "viewer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artwork_id", 49], ["viewer_id", 71], ["created_at", "2023-02-16 22:22:50.157968"], ["updated_at", "2023-02-16 22:22:50.157968"]]
+  ↳ app/controllers/artwork_shares_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artwork_shares_controller.rb:9:in `create'
+Completed 200 OK in 48ms (Views: 0.2ms | ActiveRecord: 25.4ms | Allocations: 27197)
+
+

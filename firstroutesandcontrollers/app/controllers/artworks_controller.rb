@@ -8,7 +8,7 @@ class ArtworksController < ApplicationController
   end
 
   def create
-    artwork = Artwork.new(params.require(:artwork).permit(:title,:artist_id, :image_url))
+    artwork = Artwork.new(artwork_params)
     if artwork.save
         render json: artwork
     else
