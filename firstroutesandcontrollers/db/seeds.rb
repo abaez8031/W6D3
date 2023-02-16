@@ -19,6 +19,6 @@ fahim = User.create!({name: 'Fahim'})
 #title,image_url,artist_id
 
 artwork1 = Artwork.create!({title: 'Mona Lisa',image_url: "rghekjg", artist_id: ariel.id})
-artwork2= Artwork.create!({title: 'The Whale', image_url: "gbjefj", artist_id: jordan.id})
-artwork3= Artwork.create!({title: 'Starry Night',image_url: "ghejsgrkg", artist_id: fahim.id})
-artwork4= Artwork.create!({title: 'Alvin',image_url: "dlwjfle", artist_id: kaiter.id})
+artwork2 = Artwork.create!({title: 'The Whale', image_url: "gbjefj", artist_id: jordan.id})
+artwork3 = Artwork.create!({title: 'Starry Night',image_url: "ghejsgrkg", artist_id: fahim.id})
+artwork4 = Artwork.create!({title: 'Alvin',image_url: "dlwjfle", artist_id: kaiter.id})
